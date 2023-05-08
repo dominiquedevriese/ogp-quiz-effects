@@ -1,12 +1,12 @@
 package quiz;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
  * This unit test demonstrates how effect interfaces allow us to easily unit-test effectful programs.
- * We do so using a stub implementation of the UserInterface interface. 
+ * We do so using a stub implementation of the UserInterface interface.
  */
 class MainConceptTest {
 	MainConcept t;

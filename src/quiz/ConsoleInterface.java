@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ConsoleInterface implements UserInterface {
 	private Scanner s;
-	
+
 	public ConsoleInterface() {
 		s = new Scanner(System.in);
 	}

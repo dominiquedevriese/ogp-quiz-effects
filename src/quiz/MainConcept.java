@@ -1,11 +1,11 @@
 package quiz;
 public class MainConcept implements Question {
 	private UserInterface ui;
-	
+
 	public MainConcept(UserInterface ui) {
 		this.ui = ui;
 	}
-	
+
 	@Override
 	public void askQuestion() {
 		while(true) {
@@ -15,7 +15,7 @@ public class MainConcept implements Question {
 			case "modulair programmeren":
 				ui.showMessage("Goed zo!");
 				return;
-			default: 
+			default:
 				ui.showMessage("Helaas, probeer nog eens...");
 				break;
 			}

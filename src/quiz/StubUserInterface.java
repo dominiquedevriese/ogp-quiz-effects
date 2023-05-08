@@ -7,9 +7,9 @@ public class StubUserInterface implements UserInterface {
 	private int outputcounter = 0;
 
 	private static int MAXOUTS = 10;
-	
+
 	public StubUserInterface(String[] inputs) {
-		outputs = new String[MAXOUTS]; 
+		outputs = new String[MAXOUTS];
 		this.inputs = inputs.clone();
 	}
 
@@ -25,11 +25,11 @@ public class StubUserInterface implements UserInterface {
 	public void showMessage(String msg) {
 		outputs[outputcounter++] = msg;
 	}
-	
+
 	public String[] getOutputs() {
 		return outputs.clone();
 	}
-	
+
 	public int getNumberOfOutput() {
 		return outputcounter;
 	}

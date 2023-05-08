@@ -4,7 +4,7 @@ package quiz;
 public class LogInterfaceWrapper implements UserInterface {
 	private UserInterface ui;
 	private Logger log;
-	
+
 	public LogInterfaceWrapper(UserInterface ui, Logger log) {
 		this.ui = ui;
 		this.log = log;

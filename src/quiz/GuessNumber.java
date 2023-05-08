@@ -3,11 +3,11 @@ import java.util.Random;
 
 public class GuessNumber implements Question {
 	UserInterface ui;
-	
+
 	public GuessNumber(UserInterface ui) {
 		this.ui = ui;
 	}
-	
+
 	@Override
 	public void askQuestion() {
 		Random r = new Random();
@@ -22,7 +22,7 @@ public class GuessNumber implements Question {
 			} else if( mx > x ) {
 				ui.showMessage("Lager...");
 			} else {
-				ui.showMessage( "Hoger...");				
+				ui.showMessage( "Hoger...");
 			}
 		}
 	}

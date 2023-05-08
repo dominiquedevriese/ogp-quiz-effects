@@ -3,7 +3,7 @@ package quiz;
 public class PrefixInterfaceWrapper implements UserInterface {
 	private UserInterface ui;
 	private String prefix;
-	
+
 	public PrefixInterfaceWrapper(UserInterface ui, String prefix) {
 		this.ui = ui;
 		this.prefix = prefix;
