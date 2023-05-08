@@ -1,8 +1,8 @@
 package quiz;
 
 public class PrefixInterfaceWrapper implements UserInterface {
-	private UserInterface ui;
 	private String prefix;
+	private UserInterface ui;
 
 	public PrefixInterfaceWrapper(UserInterface ui, String prefix) {
 		this.ui = ui;

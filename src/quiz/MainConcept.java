@@ -1,4 +1,5 @@
 package quiz;
+
 public class MainConcept implements Question {
 	private UserInterface ui;
 
@@ -8,10 +9,11 @@ public class MainConcept implements Question {
 
 	@Override
 	public void askQuestion() {
-		while(true) {
+		while (true) {
 			String answer = ui.askInput("Wat is het belangrijkste idee in het vak Objectgericht Programmeren?");
-			if(answer == null) return;
-			switch(answer.toLowerCase()) {
+			if (answer == null)
+				return;
+			switch (answer.toLowerCase()) {
 			case "modulair programmeren":
 				ui.showMessage("Goed zo!");
 				return;

@@ -1,12 +1,12 @@
 package quiz;
 
 public class StubUserInterface implements UserInterface {
-	private String[] inputs;
+	private static int MAXOUTS = 10;
 	private int inputcounter;
-	private String[] outputs;
+	private String[] inputs;
 	private int outputcounter = 0;
 
-	private static int MAXOUTS = 10;
+	private String[] outputs;
 
 	public StubUserInterface(String[] inputs) {
 		outputs = new String[MAXOUTS];
@@ -21,16 +21,16 @@ public class StubUserInterface implements UserInterface {
 		return inputs[inputcounter++];
 	}
 
-	@Override
-	public void showMessage(String msg) {
-		outputs[outputcounter++] = msg;
+	public int getNumberOfOutput() {
+		return outputcounter;
 	}
 
 	public String[] getOutputs() {
 		return outputs.clone();
 	}
 
-	public int getNumberOfOutput() {
-		return outputcounter;
+	@Override
+	public void showMessage(String msg) {
+		outputs[outputcounter++] = msg;
 	}
 }

@@ -1,4 +1,5 @@
 package quiz;
+
 import javax.swing.JOptionPane;
 
 public class SwingInterface implements UserInterface {
@@ -8,13 +9,14 @@ public class SwingInterface implements UserInterface {
 	 */
 	@Override
 	public String askInput(String msg) {
-		if(msg == null) throw new IllegalArgumentException("msg null not allowedb");
+		if (msg == null)
+			throw new IllegalArgumentException("msg null not allowedb");
 		return JOptionPane.showInputDialog(null, msg, "");
 	}
 
 	@Override
 	public void showMessage(String msg) {
-		JOptionPane.showMessageDialog(null,msg);
+		JOptionPane.showMessageDialog(null, msg);
 	}
 
 }
